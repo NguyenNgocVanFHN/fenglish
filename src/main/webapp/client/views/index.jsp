@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
-
+	
 <!-- Home -->
 
 <div class="home">
@@ -12,7 +12,7 @@
 			<!-- Hero Slide -->
 			<div class="hero_slide">
 				<div class="hero_slide_background"
-					style="background-image: url(views/client/assets/images/slider_background.jpg)"></div>
+					style="background-image: url(client/assets/images/slider_background.jpg)"></div>
 				<div
 					class="hero_slide_container d-flex flex-column align-items-center justify-content-center">
 					<div class="hero_slide_content text-center">
@@ -27,7 +27,7 @@
 			<!-- Hero Slide -->
 			<div class="hero_slide">
 				<div class="hero_slide_background"
-					style="background-image: url(views/client/assets/images/slider_background.jpg)"></div>
+					style="background-image: url(client/assets/images/slider_background.jpg)"></div>
 				<div
 					class="hero_slide_container d-flex flex-column align-items-center justify-content-center">
 					<div class="hero_slide_content text-center">
@@ -42,7 +42,7 @@
 			<!-- Hero Slide -->
 			<div class="hero_slide">
 				<div class="hero_slide_background"
-					style="background-image: url(views/client/assets/images/slider_background.jpg)"></div>
+					style="background-image: url(client/assets/images/slider_background.jpg)"></div>
 				<div
 					class="hero_slide_container d-flex flex-column align-items-center justify-content-center">
 					<div class="hero_slide_content text-center">
@@ -123,7 +123,8 @@
 			<!-- Popular Course Item -->
 			<div class="col-lg-4 course_box">
 				<div class="card">
-					<img class="card-img-top" src="views/client/assets/images/course_1.jpg"
+					<img class="card-img-top"
+						src="client/assets/images/course_1.jpg"
 						alt="https://unsplash.com/@kellybrito">
 					<div class="card-body text-center">
 						<div class="card-title">
@@ -134,7 +135,7 @@
 					</div>
 					<div class="price_box d-flex flex-row align-items-center">
 						<div class="course_author_image">
-							<img src="views/client/assets/images/author.jpg"
+							<img src="client/assets/images/author.jpg"
 								alt="https://unsplash.com/@mehdizadeh">
 						</div>
 						<div class="course_author_name">
@@ -151,7 +152,8 @@
 			<!-- Popular Course Item -->
 			<div class="col-lg-4 course_box">
 				<div class="card">
-					<img class="card-img-top" src="views/client/assets/images/course_2.jpg"
+					<img class="card-img-top"
+						src="client/assets/images/course_2.jpg"
 						alt="https://unsplash.com/@cikstefan">
 					<div class="card-body text-center">
 						<div class="card-title">
@@ -162,7 +164,7 @@
 					</div>
 					<div class="price_box d-flex flex-row align-items-center">
 						<div class="course_author_image">
-							<img src="views/client/assets/images/author.jpg"
+							<img src="client/assets/images/author.jpg"
 								alt="https://unsplash.com/@mehdizadeh">
 						</div>
 						<div class="course_author_name">
@@ -179,7 +181,8 @@
 			<!-- Popular Course Item -->
 			<div class="col-lg-4 course_box">
 				<div class="card">
-					<img class="card-img-top" src="views/client/assets/images/course_3.jpg"
+					<img class="card-img-top"
+						src="client/assets/images/course_3.jpg"
 						alt="https://unsplash.com/@dsmacinnes">
 					<div class="card-body text-center">
 						<div class="card-title">
@@ -190,7 +193,7 @@
 					</div>
 					<div class="price_box d-flex flex-row align-items-center">
 						<div class="course_author_image">
-							<img src="views/client/assets/images/author.jpg"
+							<img src="client/assets/images/author.jpg"
 								alt="https://unsplash.com/@mehdizadeh">
 						</div>
 						<div class="course_author_name">
@@ -244,7 +247,7 @@
 				<div
 					class="search_section d-flex flex-column align-items-center justify-content-center">
 					<div class="search_background"
-						style="background-image: url(views/client/assets/images/search_background.jpg);"></div>
+						style="background-image: url(client/assets/images/search_background.jpg);"></div>
 					<div class="search_content text-center">
 						<h1 class="search_title">Search for your course</h1>
 						<form id="search_form" class="search_form" action="post">
@@ -286,7 +289,7 @@
 			<div
 				class="col-lg-4 service_item text-left d-flex flex-column align-items-start justify-content-start">
 				<div class="icon_container d-flex flex-column justify-content-end">
-					<img src="views/client/assets/images/earth-globe.svg" alt="">
+					<img src="client/assets/images/earth-globe.svg" alt="">
 				</div>
 				<h3>Online Courses</h3>
 				<p>In aliquam, augue a gravida rutrum, ante nisl fermentum
@@ -297,7 +300,7 @@
 			<div
 				class="col-lg-4 service_item text-left d-flex flex-column align-items-start justify-content-start">
 				<div class="icon_container d-flex flex-column justify-content-end">
-					<img src="views/client/assets/images/exam.svg" alt="">
+					<img src="client/assets/images/exam.svg" alt="">
 				</div>
 				<h3>Indoor Courses</h3>
 				<p>In aliquam, augue a gravida rutrum, ante nisl fermentum
@@ -308,7 +311,7 @@
 			<div
 				class="col-lg-4 service_item text-left d-flex flex-column align-items-start justify-content-start">
 				<div class="icon_container d-flex flex-column justify-content-end">
-					<img src="views/client/assets/images/books.svg" alt="">
+					<img src="client/assets/images/books.svg" alt="">
 				</div>
 				<h3>Amazing Library</h3>
 				<p>In aliquam, augue a gravida rutrum, ante nisl fermentum
@@ -319,7 +322,7 @@
 			<div
 				class="col-lg-4 service_item text-left d-flex flex-column align-items-start justify-content-start">
 				<div class="icon_container d-flex flex-column justify-content-end">
-					<img src="views/client/assets/images/professor.svg" alt="">
+					<img src="client/assets/images/professor.svg" alt="">
 				</div>
 				<h3>Exceptional Professors</h3>
 				<p>In aliquam, augue a gravida rutrum, ante nisl fermentum
@@ -330,7 +333,7 @@
 			<div
 				class="col-lg-4 service_item text-left d-flex flex-column align-items-start justify-content-start">
 				<div class="icon_container d-flex flex-column justify-content-end">
-					<img src="views/client/assets/images/blackboard.svg" alt="">
+					<img src="client/assets/images/blackboard.svg" alt="">
 				</div>
 				<h3>Top Programs</h3>
 				<p>In aliquam, augue a gravida rutrum, ante nisl fermentum
@@ -341,7 +344,7 @@
 			<div
 				class="col-lg-4 service_item text-left d-flex flex-column align-items-start justify-content-start">
 				<div class="icon_container d-flex flex-column justify-content-end">
-					<img src="views/client/assets/images/mortarboard.svg" alt="">
+					<img src="client/assets/images/mortarboard.svg" alt="">
 				</div>
 				<h3>Graduate Diploma</h3>
 				<p>In aliquam, augue a gravida rutrum, ante nisl fermentum
@@ -359,7 +362,7 @@
 	<!-- <div class="testimonials_background" style="background-image:url(images/testimonials_background.jpg)"></div> -->
 	<div class="testimonials_background_container prlx_parent">
 		<div class="testimonials_background prlx"
-			style="background-image: url(views/client/assets/images/testimonials_background.jpg)"></div>
+			style="background-image: url(client/assets/images/testimonials_background.jpg)"></div>
 	</div>
 	<div class="container">
 
@@ -391,7 +394,8 @@
 									finibus tortor fermentum.</p>
 								<div class="testimonial_user">
 									<div class="testimonial_image mx-auto">
-										<img src="views/client/assets/images/testimonials_user.jpg" alt="">
+										<img src="client/assets/images/testimonials_user.jpg"
+											alt="">
 									</div>
 									<div class="testimonial_name">james cooper</div>
 									<div class="testimonial_title">Graduate Student</div>
@@ -411,7 +415,8 @@
 									finibus tortor fermentum.</p>
 								<div class="testimonial_user">
 									<div class="testimonial_image mx-auto">
-										<img src="views/client/assets/images/testimonials_user.jpg" alt="">
+										<img src="client/assets/images/testimonials_user.jpg"
+											alt="">
 									</div>
 									<div class="testimonial_name">james cooper</div>
 									<div class="testimonial_title">Graduate Student</div>
@@ -431,7 +436,8 @@
 									finibus tortor fermentum.</p>
 								<div class="testimonial_user">
 									<div class="testimonial_image mx-auto">
-										<img src="views/client/assets/images/testimonials_user.jpg" alt="">
+										<img src="client/assets/images/testimonials_user.jpg"
+											alt="">
 									</div>
 									<div class="testimonial_name">james cooper</div>
 									<div class="testimonial_title">Graduate Student</div>
@@ -490,7 +496,7 @@
 
 						<div class="col-lg-4 order-lg-3 order-1">
 							<div class="event_image">
-								<img src="views/client/assets/images/event_1.jpg"
+								<img src="client/assets/images/event_1.jpg"
 									alt="https://unsplash.com/@theunsteady5">
 							</div>
 						</div>
@@ -527,7 +533,7 @@
 
 						<div class="col-lg-4 order-lg-3 order-1">
 							<div class="event_image">
-								<img src="views/client/assets/images/event_2.jpg"
+								<img src="client/assets/images/event_2.jpg"
 									alt="https://unsplash.com/@claybanks1989">
 							</div>
 						</div>
@@ -563,7 +569,7 @@
 
 						<div class="col-lg-4 order-lg-3 order-1">
 							<div class="event_image">
-								<img src="views/client/assets/images/event_3.jpg"
+								<img src="client/assets/images/event_3.jpg"
 									alt="https://unsplash.com/@juanmramosjr">
 							</div>
 						</div>

@@ -9,7 +9,7 @@
 		<!-- Logo -->
 		<div class="logo_container">
 			<div class="logo">
-				<img src="views/client/assets/images/logo.png" alt=""> <span>fenglish</span>
+				<img src="client/assets/images/logo.png" alt=""> <span>fenglish</span>
 			</div>
 		</div>
 

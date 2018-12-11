@@ -9,7 +9,7 @@
     http://www.springframework.org/schema/mvc 
     http://www.springframework.org/schema/mvc/spring-mvc.xsd">
 
-	<mvc:resources mapping="/views/client/assets/**" location="/views/client/assets/" />
+	<mvc:resources mapping="/client/assets/**" location="/client/assets/" />
 	
 	<!-- Load all annotation from java class -->
 	<context:annotation-config />

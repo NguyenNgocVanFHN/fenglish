@@ -3,33 +3,78 @@
 
 <tiles-definitions>
 
-	<!-- Base Definition -->
-	<definition name="/client/baseHomeLayout" template="/views/client/layout/baseHomeLayout.jsp">
+	<definition name="/client/baseLayout" template="/client/views/layout/baseLayout.jsp">
 		<put-attribute name="title" value="" />
-		<put-attribute name="header" value="/views/client/layout/header.jsp" />
+		<put-attribute name="header" value="/client/views/layout/header.jsp" />
 		<put-attribute name="body" value="" />
 		<put-attribute name="footer" value="" />
-	</definition>
 
-	<definition name="/client/baseLayout" template="/views/client/layout/baseLayout.jsp">
-		<put-attribute name="title" value="" />
-		<put-attribute name="header"
-			value="/views/client/layout/header.jsp" />
-		<put-attribute name="body" value="" />
-		<put-attribute name="footer" value="" />
+		<!-- Default Css -->
+		<put-list-attribute name="default-css">
+			<add-attribute value="client/assets/styles/bootstrap4/bootstrap.min.css" />
+			<add-attribute value="client/assets/plugins/fontawesome-free-5.0.1/css/fontawesome-all.css" />
+			<add-attribute value="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"/>
+		</put-list-attribute>
+		
+		<!-- Default Js -->
+		<put-list-attribute name="default-js">
+			<add-attribute value="client/assets/js/jquery-3.2.1.min.js" />
+			<add-attribute value="client/assets/styles/bootstrap4/popper.js" />
+			<add-attribute value="client/assets/styles/bootstrap4/bootstrap.min.js" />
+			<add-attribute value="client/assets/plugins/greensock/TweenMax.min.js" />
+			<add-attribute value="client/assets/plugins/greensock/TimelineMax.min.js" />
+			<add-attribute value="client/assets/plugins/scrollmagic/ScrollMagic.min.js" />
+			<add-attribute value="client/assets/plugins/greensock/animation.gsap.min.js" />
+			<add-attribute value="client/assets/plugins/greensock/ScrollToPlugin.min.js" />
+			<add-attribute value="client/assets/plugins/scrollTo/jquery.scrollTo.min.js" />
+			<add-attribute value="client/assets/plugins/easing/easing.js" />
+			<add-attribute value="client/assets/plugins/greensock/ScrollToPlugin.min.js" />
+		</put-list-attribute>
 	</definition>
 	
 	<!-- Home Definition -->
-	<definition name="/client/index" extends="/client/baseHomeLayout">
+	<definition name="/client/index" extends="/client/baseLayout">
 		<put-attribute name="title" value="Trang chủ" />
-		<put-attribute name="body" value="/views/client/index.jsp" />
-		<put-attribute name="footer" value="/views/client/layout/footer.jsp" />
+		<put-attribute name="body" value="/client/views/index.jsp" />
+		<put-attribute name="footer" value="/client/views/layout/footer.jsp" />
+		
+		<!-- Home Css -->
+		<put-list-attribute name="home-css">
+			<add-attribute value="client/assets/plugins/OwlCarousel2-2.2.1/owl.carousel.css" />
+			<add-attribute value="client/assets/plugins/OwlCarousel2-2.2.1/owl.theme.default.css" />
+			<add-attribute value="client/assets/plugins/OwlCarousel2-2.2.1/animate.css" />
+			<add-attribute value="client/assets/styles/main_styles.css" />
+			<add-attribute value="client/assets/styles/responsive.css" />
+		</put-list-attribute>
+		
+		<!-- Home Js -->
+		<put-list-attribute name="home-js">
+			<add-attribute value="client/assets/plugins/OwlCarousel2-2.2.1/owl.carousel.js" />
+			<add-attribute value="client/assets/js/custom.js" />
+		</put-list-attribute>
+		
+		<put-list-attribute name="login-css" />
+		<put-list-attribute name="login-js" />
 	</definition>
 
 	<!-- Login Definition -->
 	<definition name="/client/login" extends="/client/baseLayout">
 		<put-attribute name="title" value="Đăng nhập" />
-		<put-attribute name="body" value="/views/client/login.jsp" />
-		<put-attribute name="footer" value="/views/client/layout/elementFooter.jsp" />
+		<put-attribute name="body" value="/client/views/login.jsp" />
+		<put-attribute name="footer" value="/client/views/layout/elementFooter.jsp" />
+		
+		<!-- Login Css -->
+		<put-list-attribute name="login-css" >
+			<add-attribute value="client/assets/styles/elements_styles.css" />
+			<add-attribute value="client/assets/styles/elements_responsive.css" />
+		</put-list-attribute>
+		
+		<!-- Login Js -->
+		<put-list-attribute name="login-js">
+			<add-attribute value="client/assets/plugins/progressbar/progressbar.min.js" />
+			<add-attribute value="client/assets/js/elements_custom.js" />
+		</put-list-attribute>
+		<put-list-attribute name="home-css" />
+		<put-list-attribute name="home-js" />
 	</definition>
 </tiles-definitions>

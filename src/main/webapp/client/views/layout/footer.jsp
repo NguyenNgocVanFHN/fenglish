@@ -45,7 +45,7 @@
 					<!-- Logo -->
 					<div class="logo_container">
 						<div class="logo">
-							<img src="views/client/assets/images/logo.png" alt=""> <span>course</span>
+							<img src="client/assets/images/logo.png" alt=""> <span>course</span>
 						</div>
 					</div>
 
@@ -94,19 +94,19 @@
 						<ul>
 							<li class="footer_contact_item">
 								<div class="footer_contact_icon">
-									<img src="views/client/assets/images/placeholder.svg"
+									<img src="client/assets/images/placeholder.svg"
 										alt="https://www.flaticon.com/authors/lucy-g">
 								</div> Blvd Libertad, 34 m05200 Arévalo
 							</li>
 							<li class="footer_contact_item">
 								<div class="footer_contact_icon">
-									<img src="views/client/assets/images/smartphone.svg"
+									<img src="client/assets/images/smartphone.svg"
 										alt="https://www.flaticon.com/authors/lucy-g">
 								</div> 0034 37483 2445 322
 							</li>
 							<li class="footer_contact_item">
 								<div class="footer_contact_icon">
-									<img src="views/client/assets/images/envelope.svg"
+									<img src="client/assets/images/envelope.svg"
 										alt="https://www.flaticon.com/authors/lucy-g">
 								</div>hello@company.com
 							</li>
