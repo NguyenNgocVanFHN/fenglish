@@ -440,4 +440,38 @@
 		<put-list-attribute name="home-js" />
 	</definition>
 
+	<!-- Contact Us -->
+	<definition name="/client/contact"
+		extends="/client/baseLayout">
+		<put-attribute name="title" value="Liên hệ" />
+		<put-attribute name="body"
+			value="/client/views/contact.jsp" />
+		<put-attribute name="footer"
+			value="/client/views/layout/footer.jsp" />
+
+		<!-- Login Css -->
+		<put-list-attribute name="login-css">
+			<add-attribute value="/client/assets/sdk/map.css" />
+			<add-attribute
+				value="/client/assets/styles/elements_styles.css" />
+			<add-attribute
+				value="/client/assets/styles/elements_responsive.css" />
+			<add-attribute
+				value="/client/assets/styles/contact_styles.css" />
+			<add-attribute
+				value="/client/assets/styles/contact_responsive.css" />
+		</put-list-attribute>
+
+		<!-- Login Js -->
+		<put-list-attribute name="login-js">
+			<add-attribute value="/client/assets/sdk/tomtom.min.js" />
+			<add-attribute
+				value="/client/assets/js/contact_custom.js" />
+			<add-attribute value="/client/assets/js/contact.js" />
+		</put-list-attribute>
+
+		<put-list-attribute name="home-css" />
+		<put-list-attribute name="home-js" />
+	</definition>
+
 </tiles-definitions>

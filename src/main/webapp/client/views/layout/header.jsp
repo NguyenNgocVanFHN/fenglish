@@ -27,7 +27,8 @@
 					<li class="main_nav_item"><a href="#">khóa học</a></li>
 					<li class="main_nav_item"><a
 						href="${pageContext.request.contextPath}/subjects">bài thi</a></li>
-					<li class="main_nav_item"><a href="contact.html">liên hệ</a></li>
+					<li class="main_nav_item"><a
+						href="${pageContext.request.contextPath}/contact">liên hệ</a></li>
 					<c:if test="${userName != null && isAdmin}">
 						<li class="main_nav_item"><a
 							href="${pageContext.request.contextPath}/admin/">Admin</a></li>
@@ -92,9 +93,8 @@
 				<li class="menu_item menu_mm"><a href="#">khóa học</a></li>
 				<li class="menu_item menu_mm"><a
 					href="${pageContext.request.contextPath}/subjects">bài thi</a></li>
-				<li class="menu_item menu_mm"><a href="contact.html">liên
-						hệ</a></li>
-				<li class="menu_item menu_mm"><a href="elements.html">Contact</a></li>
+				<li class="menu_item menu_mm"><a
+					href="${pageContext.request.contextPath}/contact">liên hệ</a></li>
 			</ul>
 
 			<!-- Menu Social -->

@@ -8,8 +8,6 @@
 2. Set Header
 3. Initialize Hamburger
 4. Initialize Parallax
-5. Init Google Map
-
 
 ******************************/
 
@@ -28,7 +26,6 @@ $(document).ready(function()
 	var hambActive = false;
 	var menuActive = false;
 	var ctrl = new ScrollMagic.Controller();
-	var map;
 
 	setHeader();
 
@@ -44,7 +41,6 @@ $(document).ready(function()
 
 	initHamburger();
 	initParallax();
-	initGoogleMap();
 
 	/* 
 
@@ -181,49 +177,5 @@ $(document).ready(function()
 			    .addTo(ctrl);
 			});
 		}
-	}
-
-	/* 
-
-	5. Init Google Map
-
-	*/
-
-	function initGoogleMap()
-	{
-		var myLatlng = new google.maps.LatLng(25.498345,-80.352984);
-    	var mapOptions = 
-    	{
-    		center: myLatlng,
-	       	zoom: 13,
-			mapTypeId: google.maps.MapTypeId.ROADMAP,
-			draggable: true,
-			scrollwheel: false,
-			zoomControl: true,
-			zoomControlOptions:
-			{
-				position: google.maps.ControlPosition.RIGHT_CENTER
-			},
-			mapTypeControl: false,
-			scaleControl: false,
-			streetViewControl: false,
-			rotateControl: false,
-			fullscreenControl: true,
-			styles:[]
-    	}
-
-    	// Initialize a map with options
-    	map = new google.maps.Map(document.getElementById('map'), mapOptions);
-    	map.panBy(-45, 0);
-
-		// Re-center map after window resize
-		google.maps.event.addDomListener(window, 'resize', function()
-		{
-			setTimeout(function()
-			{
-				google.maps.event.trigger(map, "resize");
-				map.setCenter(myLatlng);
-			}, 1400);
-		});
 	}
 });
