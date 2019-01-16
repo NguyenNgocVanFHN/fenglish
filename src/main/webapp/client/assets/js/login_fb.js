@@ -43,7 +43,6 @@ function statusChangeCallback(response, event) {
 			},
 			success : function(res) {
 				if (res.status === "success") {
-					setCookie(fbUser, response.authResponse.userID, 1);
 					window.location.href = contextUrl;
 				}
 			}
@@ -87,11 +86,13 @@ function handleSessionResponse(response) {
 }
 
 $("#logout").click(function() {
-	if (getCookie(fbUser) === "" || getCookie(fbUser) === "undefined") {
-		window.location.href = contextUrl + "security_logout";
-		return;
-	}
-	FB.logout(handleSessionResponse);
+	FB.getLoginStatus(function(response) {
+		if (response.status === "connected") {
+			FB.logout(handleSessionResponse);
+		} else {
+			window.location.href = contextUrl + "security_logout";
+		}
+	});
 });
 
 $(document).ready(function() {

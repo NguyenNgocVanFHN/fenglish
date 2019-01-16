@@ -30,7 +30,7 @@ public class IndexController extends BaseController {
 		return "/client/index";
 	}
 
-	@RequestMapping(value = "login", method = RequestMethod.GET)
+	@RequestMapping(value = "/login", method = RequestMethod.GET)
 	public String login(@RequestParam(value = "error", required = false) final String error, final Model model) {
 		return "/client/login";
 	}
